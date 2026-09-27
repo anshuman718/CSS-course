@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS multiple styles for 1 element</title>
+</head>
+<style>
+    /*The specificity of this selector is 1+10 =11*/
+    h1.car{
+        box-sizing: border-box;
+        color:aqua;
+        width:200px;
+        margin:234px;
+        padding:20px;
+        border:10px solid black;
+    }
+/*The specificity of this selector is 10*/
+    .car{
+        color:purple;
+    }
+
+    .res{
+        color:blue;
+
+    }
+
+    [data-x =a]{
+        background-color: blueviolet;
+    } /*this is attribute selector*/
+
+    /*The specificity value is 1+10+10 = 21*/
+    a.bruce.wayne{
+
+    background-color:cadetblue;
+    }
+</style>
+<body>
+   <h1 class="car res" data-x="a" >CSS specificity</h1> 
+   <a class="bruce wayne " href="https://www.google.com " >Goggle</a>
+
+</body>
+</html> <!--Sometimes when no css is applied then the browser sets by its own.This is known as user agent stylesheets .It means the default set of css rules built in a web browser.-->
+
+<!--The specificity  priority for CSS is as follows:-->
+
+<!--important mark>Inline style>ID selector>class selector>element selector-->
+
+<!--The position matters if the selectors are of the same type.For example in the above style the blue color will be applied because the res class selector is below the car class selector.-->
+
+<!--To apply important mark we use,!important-->

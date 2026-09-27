@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sizing units</title>
+</head>
+<style>
+html{
+        font-size: 20px; /*It is the default font size of the browser. It is used to calculate the em and rem units.*/
+    }
+    
+    #box{
+        border: 5px solid blueviolet;        /*width: 1800px; */
+        /*Pixcel is 96th of and inch*/
+        width:80vw; /*It makes the width adjust to the screen or viewport.*/
+        box-sizing: border-box;
+        margin: auto; /* It gives the margin from left and right automatically to center the element.*/
+        height:20vh;
+    }
+
+    .ducard{ 
+        box-sizing: border-box;
+        border: 5px solid firebrick;
+        width:80vw;
+        margin: 23px auto; /*23 is the top botton margin and auto is from left right.*/
+        background-color: darkslategray;
+        height:80vh;
+        font-size:2rem;/*It makes the font size 2 times of the root element which is html in this case. It is not affected by the font size of the parent element.*/
+    
+    }
+
+    
+
+    
+.rasalgul{
+    font-size:23px;
+}
+    .rasalgul>p{
+         box-sizing: border-box;/*It tells that the height includes border and padding also,but margin is not included. By default the box-sizing is content-box which means the height and width include only content and not padding and border. So if we set the height of an element to 200px and add 10px padding and 2px border then the total height of the element will be 200+10+10+2+2=224px but if we set box-sizing to border-box then the total height of the element will be 200px only because it includes border and padding also.*/
+         border:14px solid tomato;
+         font-size:2em;/*It makes the font size 2 times of the parent element which is rasalgul in this case. It is affected by the font size of the parent element. So it will be 2*23=46px.*/
+         height:300px;
+         margin:3px;
+         padding:10px;
+    }
+
+.batfleck{
+    background-color: black;
+    color:palegreen;
+    border:7px solid red;
+    width:100vmin; /*It makes the width adjust to the smaller side of the screen either height or width. In this device the width is smaller than height so it will adjust to the width of the screen.*/
+    min-height:9rem; /*It makes the minimum height 3 times of the root element which is html in this case. It is not affected by the font size of the parent element.*/
+}
+</style>
+<body>
+    <div id="box">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero nihil quia facilis. Qui, consequuntur libero quidem nam culpa earum non, quaerat, nostrum odio minima consequatur! Enim tempora esse natus corrupti soluta dolor veritatis laboriosam expedita ducimus est dolore dicta omnis iure ipsam aliquid vero, nihil nulla quasi optio tenetur dolorum quaerat perspiciatis ullam consequatur! Ex, odio!
+    </div>
+<div class="ducard">
+      <container  >
+        <p>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit excepturi nihil voluptate! Similique a quasi ipsum nisi dolore! Molestiae earum ab optio eaque molestias nisi animi rem repellendus asperiores tenetur sunt, quis eligendi nobis quia, repellat, laborum eum ea numquam consequuntur provident nam itaque! Incidunt, ipsum fugiat optio quas sequi nobis nihil maiores explicabo est ratione.
+    </p>
+  </container>
+</div>
+<div class="rasalgul">
+    
+    <p>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quisquam explicabo ipsa amet deleniti nemo ipsam aliquam necessitatibus, corporis possimus? Ducimus perferendis voluptate iusto tenetur laborum corporis cupiditate cum adipisci, qui molestiae porro quisquam?
+</p>
+
+</div>
+
+
+<div class="batfleck">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet odit veritatis veniam eum id sed dicta dolores accusamus. Reiciendis ullam ipsa architecto voluptates consequuntur libero distinctio expedita esse aspernatur ipsam nam, eius maxime recusandae ad, deserunt et provident mollitia eos nesciunt quam fugit totam.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur sapiente tempore corporis, incidunt natus deserunt ad eos! Natus, quasi ex at unde delectus numquam. Ex blanditiis sapiente nihil ipsam numquam. Beatae temporibus at doloremque architecto commodi saepe error quos accusantium, dicta possimus sint sed ratione neque molestias non veniam perferendis sit, omnis accusamus autem nemo, eveniet numquam. Temporibus sequi ab repudiandae dolorem commodi, nemo eaque, harum fugit, cumque neque non quaerat numquam deleniti? Doloribus nam assumenda nostrum eligendi aut tempora magni, deserunt unde distinctio quis eos soluta doloremque ipsum corrupti veniam officia molestias at porro laboriosam amet est id odit qui! Mollitia asperiores maiores, excepturi at autem obcaecati facere dolore laborum placeat quaerat, magnam officiis eveniet? Enim voluptate itaque debitis recusandae quos explicabo repellendus perspiciatis fuga, atque a autem ex accusamus praesentium quaerat sit obcaecati distinctio facere ullam neque aspernatur iure porro? Ab architecto nulla, dicta quisquam, dolore, earum quae beatae ipsa dolores nisi atque. Natus architecto, fugit optio voluptatem magnam vero necessitatibus delectus impedit ad alias, voluptate accusamus, explicabo iste voluptas sit ducimus praesentium fugiat. Reprehenderit enim rem facere debitis quae itaque aspernatur, in perferendis voluptates quasi qui quam, unde, praesentium iusto consequatur sed iste hic tenetur expedita sit impedit? Repellat nam excepturi vero commodi architecto soluta? Veniam molestiae illum illo doloribus nesciunt amet et vero dolore est quo, in at iure quos minus neque mollitia alias laudantium quidem quis iusto assumenda tempora dolorem distinctio. Beatae saepe magni atque praesentium pariatur hic laudantium? Modi laboriosam ab voluptatem odit blanditiis expedita accusamus sit impedit. Ex similique quam corporis facere vero in perferendis, cum, cumque ullam dolor veritatis voluptatem nam tenetur recusandae natus neque repudiandae officia debitis eius doloremque laboriosam numquam aspernatur. Exercitationem, maiores, adipisci id velit nulla perspiciatis accusantium minus repellendus aut modi odio libero quis officiis eligendi nostrum autem. Natus at aspernatur eius, iste dolores asperiores facilis ad assumenda consequuntur distinctio praesentium voluptate officiis accusamus repudiandae deserunt molestiae laboriosam ipsa facere esse sunt, iure vitae? Sed sequi dolorum non modi quo fugiat. Placeat magni saepe, necessitatibus, in et facilis dolorum rerum soluta accusantium, hic quas cumque accusamus omnis eaque? Ipsam quos aliquid officiis asperiores. Maxime, alias eligendi magni aliquam itaque temporibus placeat quo quos autem dolore accusamus maiores error eaque, facilis, et iste sint harum? Obcaecati ad doloremque est itaque voluptas, repellat, dignissimos praesentium ipsam esse nesciunt, dolor dolorem quisquam. Quae non ab, itaque aut libero error cumque maiores, recusandae eveniet tempore est iusto vero molestias iure veritatis dignissimos tempora voluptas vel consectetur quod! Mollitia, aut voluptatem tempore nihil unde molestias adipisci inventore voluptas ex, quidem exercitationem qui consequuntur! Accusamus, fugit explicabo expedita suscipit veritatis esse deleniti numquam asperiores omnis quia voluptatibus quidem porro sunt aut culpa! Voluptate asperiores eum, consectetur a in sit! Distinctio atque dolor sunt dolorum earum ut, quisquam enim cumque officia voluptatibus ipsum qui. Iste voluptatibus illo a unde quo explicabo illum culpa. Sint dolorum quibusdam nostrum dicta repellat quas corporis quo tempora dolore perspiciatis? Eum cupiditate expedita, error quas, blanditiis natus ratione ut reiciendis sint eius quo eaque necessitatibus voluptatum magnam consectetur incidunt saepe deserunt voluptate impedit provident aspernatur quod perferendis a alias. Fugiat inventore placeat eius perspiciatis beatae repudiandae in rem aliquid delectus ducimus at recusandae excepturi quia obcaecati modi, consequuntur accusamus laudantium! Optio, vel voluptas. Quisquam, cupiditate eius similique consequuntur, esse quidem expedita, pariatur officia eveniet numquam omnis? Tenetur at maiores est quasi praesentium, architecto repellendus. Consequatur earum ipsa possimus delectus rerum autem provident porro iusto libero, ut quidem exercitationem ratione excepturi cumque deserunt a voluptas in inventore temporibus tempore tenetur vero reiciendis tempora explicabo. Sapiente autem repellat accusantium, quaerat dignissimos nisi blanditiis illum, ipsam quo, officiis atque quisquam similique ut provident corrupti. Necessitatibus impedit, dignissimos harum pariatur laboriosam reiciendis delectus modi autem similique reprehenderit ullam earum. Quasi nisi, eligendi iusto repudiandae recusandae quis facilis autem praesentium. Consectetur, voluptatum. Ipsum a ullam quisquam ad, omnis aliquam quo, porro magni praesentium, doloribus quis quidem? Ea blanditiis praesentium sed quasi aut magnam. Praesentium aut ad alias quisquam ipsa deleniti, in explicabo nemo nihil fuga officiis earum quam qui placeat hic unde nobis architecto ab cupiditate, illum voluptate a. Cupiditate quam corrupti voluptatem laboriosam, asperiores temporibus quas iure iste laudantium impedit eum fugit reiciendis in aut deleniti dicta nihil, sapiente est neque molestiae similique ducimus. Exercitationem facere quibusdam voluptas dolores, vero similique pariatur quas impedit ab voluptatibus corporis, consequatur quae fugit! Reprehenderit ut aperiam tempora voluptate magni, quo exercitationem eligendi a, vero, qui recusandae sed! Tempora quibusdam numquam, eaque dolorum neque explicabo architecto rerum officia quia maxime necessitatibus autem repellendus. Nemo unde, ipsum eius totam quas culpa odio quibusdam minus adipisci officia quo asperiores facilis omnis cum, nihil corrupti itaque voluptatem aliquid necessitatibus delectus pariatur assumenda officiis? Perferendis suscipit rem consectetur facere vero veritatis ipsam blanditiis id minus cumque explicabo dolore error ducimus ab eius, ex, saepe recusandae. Vero vitae praesentium, necessitatibus voluptates sed eveniet laborum fugiat debitis deleniti labore iure eligendi provident, iusto dolores maiores quos nisi aperiam ab sunt a? Vel ducimus maiores minima nostrum facilis, consequuntur accusamus. Aliquam laboriosam cumque deleniti quae enim obcaecati quos iusto sed, cum autem suscipit corrupti debitis et adipisci saepe placeat quaerat ab accusantium at amet, quisquam quod sit! Nisi unde voluptatum quidem at aut vel ad corrupti perferendis pariatur qui reprehenderit illo recusandae, architecto magni accusantium est, laborum hic nobis, omnis molestias tenetur sapiente.
+</div>
+</body>
+</html>

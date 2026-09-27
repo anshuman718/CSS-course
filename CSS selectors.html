@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selectors</title>
+</head>
+<body>
+    <div class="cyan">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta assumenda culpa rerum. Debitis, voluptas. Quibusdam, est totam minima rem quidem repudiandae ipsa magni.
+    </div>
+<div id="green4">
+    <h3>Lorem ipsum dolor sit.</h3>
+</div>
+
+<div>
+    <h5>This is a very small heading {h5}</h5>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas laudantium neque in eveniet ratione vitae recusandae dolorum impedit?</p>
+</div>
+
+<div>
+    <a href="https://www.google.com">Goggle</a>
+    <a href="https://www.facebook.com">facebook</a>
+</div>
+
+<main class="first">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur eligendi temporibus similique unde commodi, quo sunt earum neque non quae veritatis impedit, consequuntur alias dicta voluptas magni facilis architecto iste incidunt sed ad. Fuga!</p>
+</main>
+    <style>
+
+        /*cyan is CSS selector*/
+        .cyan{
+
+            background-color:cyan;
+        }
+
+        #green4{
+            background-color: gray;
+        }
+
+        /*child selectors*/
+        /* child selector applies only when it is directly inside another element and descendent selector applies when it is in any form inside it.*/
+
+        div > p{
+            color: chocolate;
+            font-family:'Times New Roman', Times, serif;
+        }
+  /*universal selector*/
+
+      *{
+        margin:5px;
+        padding: 5px;
+        }
+
+        /*pseudo selector*/
+        a:visited{
+            color:black;
+        }
+
+        a:link{ 
+            color:green
+        }
+
+        a:active{ 
+            background-color: blueviolet;
+        }
+    a:hover{
+        background-color: darkslateblue;
+    }
+
+    p:first-child{
+        background-color:dodgerblue;
+    }
+    </style>
+</body>
+</html>
